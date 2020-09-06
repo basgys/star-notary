@@ -1,0 +1,103 @@
+$colors: (
+  // Primary
+  'white-alps': lighten(#18B492, 58%),
+  'bain-riche': #edfdf9,
+  'jungle-green': #18B492,
+  'tropical-rain-forest': #10755f,
+  'castleton-green': #0C5A49,
+  'dark-green': #04251d,
+  // Base
+  'gunmetal': #232937,
+  'sheen-green': #a6db0b,
+  'sheen-green-light': lighten(#a6db0b, 80%),
+  'sheen-green-dark': darken(#a6db0b, 80%),
+  'aureolin': #f6e927,
+  'aureolin-light': lighten(#f6e927, 80%),
+  'aureolin-dark': darken(#f6e927, 80%),
+  'red-pigment': #f52d28,
+  'red-pigment-light': lighten(#f52d28, 80%),
+  'red-pigment-dark': darken(#f52d28, 80%),
+  // shades
+  'baby-powder': #fcfffc,
+  'platinium': #e7e7e8,
+  'light-grey':#cfcfd1,
+  'grey-web':#87898c,
+  'onyx':#3f4246,
+  'raisin-black':#272a2f,
+  'rich-black': #101319
+);
+
+$schemes: (
+  'default': (
+    'brand': (
+      'lighter': 'bain-riche',
+      'light': 'jungle-green',
+      'default': 'tropical-rain-forest',
+      'dark': 'castleton-green',
+      'darker': 'dark-green',
+    ),
+    'interaction': (
+      'default': 'rich-black',
+      'default-light': 'baby-powder',
+      'default-dark': 'rich-black',
+      'primary-light': 'brand--lighter',
+      'primary': 'brand--default',
+      'primary-dark': 'brand--darker',
+      'negative-light': 'red-pigment-light',
+      'negative': 'red-pigment',
+      'negative-dark': 'red-pigment-dark',
+      'warning-light': 'aureolin-light',
+      'warning': 'aureolin',
+      'warning-dark': 'aureolin-dark',
+      'positive-light': 'sheen-green-light',
+      'positive': 'sheen-green',
+      'positive-dark': 'sheen-green-dark',
+      'input': 'shade--none',
+      'input-success': 'text--success',
+      'input-error': 'text--error',
+      'inverted': 'shade--none',
+      'disabled': 'text--weak'
+    ),
+    'shade': (
+      'none': 'baby-powder',
+      'lighter': 'platinium',
+      'light': 'light-grey',
+      'half': 'grey-web',
+      'dark': 'onyx',
+      'darker': 'raisin-black',
+      'full': 'rich-black'
+    ),
+    'text': (
+      'default': 'shade--full',
+      'weak': 'shade--dark',
+      'inverted': 'shade--none',
+      'error': 'red-pigment',
+      'warning': 'aureolin',
+      'success': 'sheen-green'
+    ),
+    'icon': (
+      'default': 'shade--half',
+      'default-over': 'interaction--default',
+      'inverted': 'shade--none'
+    ),
+    'layout': (
+      'line': 'shade--light',
+      'table': 'shade--none',
+      'table-head': 'shade--lighter',
+      'table-foot': 'shade--lighter',
+      'table-row-selected': 'shade--lighter',
+      'shadow': 'shade--darker',
+      'backdrop': 'shade--full',
+      'shadow-inverted': 'shade--dark',
+      'background': 'white-alps',
+      'paper': 'shade--none',
+      'paper-inverted': 'shade--full'
+    )
+  ),
+  'light': (
+    // Default scheme
+  ),
+  'dark': (
+    // TODO:
+  )
+);

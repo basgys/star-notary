@@ -1,0 +1,39 @@
+.bar {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: size(bezel);
+  background-color: var(--c-layout--paper);
+  border-bottom: size(line) solid var(--c-layout--line);
+
+  @include bp(phone) {
+    flex-direction: column;
+  }
+}
+
+.bar > * {
+  @include bp(phone) {
+    margin-top: size(stack);
+    width: 100%;
+  }
+}
+
+.bar__title {
+  display: inline-block;
+}
+
+.bar__search {
+  flex-grow: 1;
+}
+
+.bar__action + .bar__action {
+  margin-left: size(stack);
+
+  @include bp(phone) {
+    margin-left: 0;
+  }
+}

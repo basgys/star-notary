@@ -1,0 +1,21 @@
+.container {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 1440px;
+  padding: size(bezel);
+
+  @include bp(phone) {
+    max-width: 680px;
+  }
+}
+
+.container--tight {
+  flex-grow: 1;
+  margin: 0 auto;
+  max-width: 1356px;
+  padding: size(bezel);
+
+  @include bp(phone) {
+    max-width: 680px;
+  }
+}
